@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Beautifully crafted minimalist chrome extension.",
   "chrome_url_overrides": {
-    "newtab": "journey/index.html"
+    "newtab": "pages/index.html"
   },
   "permissions": ["activeTab", "tabs", "topSites", "storage", "system"],
   "content_scripts": [],
