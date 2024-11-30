@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Journey",
+  "version": "1.0",
+  "description": "Beautifully crafted minimalist chrome extension.",
+  "chrome_url_overrides": {
+    "newtab": "journey/index.html"
+  },
+  "permissions": ["activeTab", "tabs", "topSites", "storage", "system"],
+  "content_scripts": [],
+  "action": {
+    "default_icon": {
+      "16": "assets/images/journey-16x16.png",
+      "32": "assets/images/journey-32x32.png",
+      "180": "assets/images/journey-180x180.png"
+    },
+    "default_title": "Journey",
+    "default_popup": "popup/index.html"
+  }
+}

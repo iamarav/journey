@@ -1,0 +1,44 @@
+/*
+  CSS for Config Page
+*/
+
+* {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 3%;
+}
+
+form {
+  background-color: #eee;
+  padding: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.field label {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+textarea,
+input {
+  width: 80%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.danger {
+  background-color: red;
+  color: white;
+}

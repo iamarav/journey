@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configure | Journey</title>
+    <link rel="stylesheet" href="../assets/styles/config.css" />
+
+    <script src="../env.js"></script>
+  </head>
+  <body>
+    <h1>Config</h1>
+
+    <hr />
+
+    <form id="config-update">
+      <div class="field">
+        <label for="jname">User name</label>
+        <input type="text" name="jname" id="jname" />
+      </div>
+
+      <div class="field">
+        <label for="jconfig"
+          >Configuration JSON (Please do not alter schema, this can cause
+          unintended effects)</label
+        >
+        <textarea name="jconfig" id="jconfig" rows="20"></textarea>
+
+        <em>
+          If the page is not loading correctly, try restoring the config in the
+          <a href="#utilities">utilities</a>.
+        </em>
+      </div>
+
+      <button type="submit">Update</button>
+    </form>
+
+    <hr />
+
+    <div id="shortcuts">
+      <h2>Shortcuts on main page</h2>
+
+      <div id="help"></div>
+    </div>
+
+    <hr />
+
+    <div id="utilities">
+      <h2>Utilities</h2>
+
+      <button type="button" class="danger" id="clear">Clear Storage</button>
+
+      <button type="button" id="restore">Restore Config</button>
+    </div>
+
+    <script src="./config.js"></script>
+  </body>
+</html>

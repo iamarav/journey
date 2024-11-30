@@ -1,0 +1,38 @@
+/*
+  CSS for Animations
+*/
+
+.fade-in {
+  animation: fadeInAnimation 0.5s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.glowing-text {
+  color: white;
+  animation: glowingText 3s infinite;
+}
+
+@keyframes glowingText {
+  0% {
+    text-shadow: 0 0 10px var(--nt-glow-color), 0 0 20px var(--nt-glow-color),
+      0 0 30px var(--nt-glow-color), 0 0 40px var(--nt-glow-color);
+  }
+  50% {
+    text-shadow: 0 0 5px var(--nt-glow-color), 0 0 10px var(--nt-glow-color),
+      0 0 15px var(--nt-glow-color), 0 0 20px var(--nt-glow-color);
+  }
+  100% {
+    text-shadow: 0 0 10px var(--nt-glow-color), 0 0 20px var(--nt-glow-color),
+      0 0 30px var(--nt-glow-color), 0 0 40px var(--nt-glow-color);
+  }
+}

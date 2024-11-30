@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Title -->
+    <title>New Tab - Begin your journey</title>
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../assets/styles/journey.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/journey-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/images/journey-16x16.png"
+    />
+
+    <script src="../env.js"></script>
+  </head>
+  <body class="fade-in journey">
+    <div id="bg-overlay" class="bg-overlay gray-filter"></div>
+
+    <!-- Main Content -->
+    <main id="content" class="vignette">
+      <header>
+        <a href="#http://github.com/">GitHub</a>
+        | <a href="./config.html">Config</a>
+      </header>
+
+      <section id="welcome" class="glowing-text">
+        <h1 id="greeting"></h1>
+        <h1 id="name"></h1>
+      </section>
+
+      <!-- Widgets -->
+      <div id="widgets">
+        <div class="widget heading text-center">
+          <h3 class="fade-in">Start your Journey</h3>
+        </div>
+
+        <section id="search" class="widget">
+          <form action="https://www.google.com/search" method="GET">
+            <label for="search-box">
+              <img
+                class="search-logo"
+                src="../assets/images/google-brands-solid.svg"
+                alt="Google Logo"
+              />
+            </label>
+
+            <input
+              type="text"
+              id="search-box"
+              class="search-box"
+              name="q"
+              placeholder="Search anything..."
+              autofocus="true"
+              required
+            />
+
+            <button
+              type="submit"
+              id="search-btn"
+              class="search-btn"
+              title="Search button"
+            >
+              <img src="../assets/images/search-icon.svg" alt="Search" />
+            </button>
+          </form>
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="clocks" class="widget time-container"></section>
+
+        <section id="bookmarks" class="widget bookmarks-container"></section>
+      </div>
+    </main>
+
+    <script type="application/javascript" src="./script-min.js"></script>
+  </body>
+</html>
