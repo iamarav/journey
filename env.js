@@ -1,4 +1,6 @@
 window.__defaultConfig = Object.freeze({
+  githubLink: `https://github.com/see-bz/journey`,
+  installLink: `https://github.com/see-bz/journey/releases/`,
   widgets: {
     clocks: {
       timezones: [

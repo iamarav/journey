@@ -32,6 +32,7 @@
       if (!journey) return;
 
       return {
+        header: journey.querySelector("header"),
         name: journey.querySelector("#name"),
         greetings: journey.querySelector("#greeting"),
         clocks: journey.querySelector("#clocks"),
@@ -44,7 +45,7 @@
 
     function registerEvents() {
       onKeyPress([...__magicKeys.OPEN_CONFIG], () => {
-        window.location.href = "./config.html";
+        window.location.href = "./pages/config.html";
       });
     }
 
@@ -60,6 +61,7 @@
     function setWidgets(...widgets) {
       const config = JSON.parse(localStorage.getItem(lsKeys.CONFIG));
       setBackgroundImage({ config, dom, lsKeys });
+      setHeader({ config, dom });
 
       widgets.forEach((widget) => widget({ config, dom, lsKeys }).run());
     }
@@ -316,5 +318,19 @@
       if (!storedImage)
         dom().bgOverlay.style.backgroundImage = `url(${base64data})`;
     };
+  }
+
+  function isExtensionInstalled() {
+    return !location.protocol.includes("http");
+  }
+
+  async function setHeader({ dom, config }) {
+    dom().header.innerHTML = `
+      <a href="${config.githubLink}" target="_blank">GitHub</a>
+      | <a href="./pages/config.html" target="_blank">Config</a>
+    `;
+    if (!isExtensionInstalled()) {
+      dom().header.innerHTML += ` | <a target="_blank" href="${config.installLink}">Install</a>`;
+    }
   }
 }

@@ -291,6 +291,7 @@ a:visited {
 header {
   text-align: right;
   color: #aaa;
+  font-size: 12px;
 }
 
 header:hover {

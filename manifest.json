@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
   "name": "Journey",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Beautifully crafted minimalist chrome extension.",
   "chrome_url_overrides": {
-    "newtab": "pages/index.html"
+    "newtab": "index.html"
   },
   "permissions": ["activeTab", "tabs", "topSites", "storage", "system"],
   "content_scripts": [],
